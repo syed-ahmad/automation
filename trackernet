@@ -1,7 +1,10 @@
 #!/bin/bash
 while true; do
-  curl -s http://lul-trackernet.tfl.gov.uk/TrackernetWebService/TimetableService.aspx\?Feed\=4\&Line\=D\&Time\= | xmllint --format - | grep -i $*
   echo $(date)
+  curl -s http://lul-trackernet.tfl.gov.uk/TrackernetWebService/TimetableService.aspx\?Feed\=4\&Line\=D\&Time\= | xmllint --format - | grep -i $*
   echo ''
-  sleep 10
+  echo '<--------------------------------------------------------------------------------------------------------------------------------------->'
+  echo ''
+  echo $(date)
+  sleep 15
 done
