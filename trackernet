@@ -3,7 +3,7 @@ while true; do
   echo $(date)
   curl -s http://lul-trackernet.tfl.gov.uk/TrackernetWebService/TimetableService.aspx\?Feed\=4\&Line\=D\&Time\= | xmllint --format - | grep -i $*
   echo ''
-  echo '<--------------------------------------------------------------------------------------------------------------------------------------->'
+  echo '<------------------------------>'
   echo ''
   echo $(date)
   sleep 15
