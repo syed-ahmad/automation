@@ -1,0 +1,8 @@
+#!/bin/bash
+echo -n 'What is your name? '
+read NAME
+echo "Hello $NAME!"
+
+# -n no new line
+# chmod +x yourfilename - to make it an executable
+# ./yourfilename to run

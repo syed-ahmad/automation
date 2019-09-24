@@ -1,0 +1,5 @@
+#!/bin/bash
+echo $(date +'%F.%T') message goes here \"$*\" >>$(date +%F).log
+
+# $* all args
+# $1 $2 positional args
